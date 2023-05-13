@@ -1,5 +1,5 @@
 .wrapper {
-  background-color: var(--blue-1);
+  background-color: var(--primary);
   // color: black;
   position: fixed;
   height: calc(100vh - var(--height-footer));
@@ -14,6 +14,7 @@
     width: var(--width-sidebar);
     position: fixed;
     z-index: 10;
+    color: var(--secondary);
   }
   .list {
     width: 100%;
@@ -30,24 +31,28 @@
   width: 100%;
   padding: 8px 0;
   display: flex;
+  color: var(--secondary);
   .link {
     display: flex;
     align-items: center;
     padding: 0 25px;
+    color: var(--secondary);
   }
   .icon {
     margin-right: 10px;
     font-size: 17px;
+    color: var(--secondary);
   }
   .name {
     font-size: 17px;
     font-weight: 600;
+    color: var(--secondary);
   }
 }
 
 .active {
-  color: #34224f;
-  background-color: #9b4de0;
+  color: var(--primary);
+  background-color: var(--accent);
 }
 
 .line {
@@ -56,7 +61,7 @@
 }
 
 .lineActive {
-  background-color: white;
+  background-color: var(--secondary);
 }
 
 .link {

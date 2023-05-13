@@ -3,7 +3,7 @@
   z-index: 100;
   width: 100vw;
   height: calc(100vh - 90px);
-  background-color: pink;
+  background-color: var(--accent);
   left: 0;
   transition: all 0.5s ease;
   .content_lyrics{
@@ -17,8 +17,9 @@
       }
     }
     .list_lyrics{
-      width: 500px;
-      max-width: 80%;
+      // width: 500px;
+      // max-width: 80%;
+      text-align: center;
       height: calc(100vh - 90px);
       overflow: auto;
       &::-webkit-scrollbar{
@@ -29,10 +30,11 @@
         font-weight: 800;
         margin-bottom: 20px;
       }
+      .highlighted{
+        color: var(--secondary);
+        font-size: 40px;
+      }
     }
   }
 }
 
-.highlighted{
-  color: red;
-}

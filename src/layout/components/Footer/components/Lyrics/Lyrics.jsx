@@ -49,12 +49,12 @@ const Lyrics = ({
     >
       <div className={clsx(style.header_lyrics)}></div>
       <div className={clsx(style.content_lyrics)}>
-        <div className={clsx(style.logo)}>
+        {/* <div className={clsx(style.logo)}>
           <img
             src="https://i.pinimg.com/564x/57/24/d2/5724d2e9834bedff7e8366e27d5a8f14.jpg"
             alt="Logo Ag"
           />
-        </div>
+        </div> */}
         <div className={clsx(style.list_lyrics)}>
           {songs[indexSong].lyrics.map((item, index) => {
             return (

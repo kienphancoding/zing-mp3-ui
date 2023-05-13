@@ -8,8 +8,8 @@
   width: calc(100% - var(--width-sidebar));
   margin-left: var(--width-sidebar);
   padding: 0 var(--padding-content);
-  background-color: var(--blue-2);
-  color: black;
+  background-color: var(--secondary);
+  color: var(--primary);
 }
 
 .scroll {
@@ -33,7 +33,7 @@
 .search {
   display: flex;
   flex-direction: column;
-  background-color: rgba(41,21,71,0.8);
+  background-color: var(--secondary-button);
   border-radius: 20px;
   width: 440px;
   max-width: 440px;
@@ -52,8 +52,8 @@
     }
     input {
       height: 25px;
-      background-color: rgba(41,21,71,0.8);
-      color: white;
+      background-color: var(--secondary-button);
+      color: var(--primary);
       font-size: 15px;
       border: none;
       margin: 0 5px;
@@ -75,20 +75,24 @@
         width: 7px;
       }
       &::-webkit-scrollbar-thumb {
-        background-color: #34224f;
+        background-color: var(--primary);
         border-radius: 20px;
       }
     }
 
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-color: var(--blue-1);
+    background-color: var(--secondary-button);
 
     .item {
       display: flex;
       margin-bottom: 10px;
       &:hover {
-        background-color: var(--blue-2);
+        background-color: var(--accent);
+        h1,
+        p {
+          color: var(--secondary);
+        }
       }
       img {
         width: 52px;
@@ -109,7 +113,7 @@
     }
   }
 }
-.searchActive{
+.searchActive {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
@@ -122,7 +126,7 @@
   width: var(--width-btn);
   height: var(--width-btn);
   font-size: 20px;
-  background-color: var(--blue-1);
+  background-color: var(--secondary-button);
   margin-right: 12px;
   cursor: pointer;
 }
@@ -151,8 +155,8 @@
   height: 0;
   margin: 8px;
   box-sizing: border-box;
-  border: 32px solid #fff;
-  border-color: #fff transparent #fff transparent;
+  border: 32px solid var(--secondary);
+  border-color: var(--secondary) transparent var(--secondary) transparent;
   animation: loadingImg 1.2s infinite;
 }
 @keyframes loadingImg {
@@ -181,7 +185,7 @@
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background: #fff;
+  background: var(--secondary);
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 .loadingText div:nth-child(1) {

@@ -5,7 +5,7 @@
   max-height: calc(100vh - 90px);
   overflow: auto;
   right: 0;
-  background-color: white;
+  background-color: var(--secondary);
   padding: 12px;
   position: fixed;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -14,23 +14,14 @@
     display: flex;
     align-items: center;
     margin-bottom: 12px;
-    background-color: #fff;
+    background-color: var(--secondary-button);
     padding: 8px 16px;
     border-radius: 5px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     .option,
     .author,
     .title {
-      color: #130c1c;
-    }
-  }
-
-  .active {
-    background-color: pink;
-    .option,
-    .author,
-    .title {
-      color: #fff;
+      color: var(--primary);
     }
   }
 
@@ -49,17 +40,26 @@
 
   .song .title {
     font-size: 18px;
-    color: var(--text-color);
+    color: var(--primary);
   }
 
   .song .author {
     font-size: 12px;
-    color: #999;
+    color: var(--primary);
   }
 
   .song .option {
     padding: 16px 8px;
-    color: #999;
+    color: var(--primary);
     font-size: 18px;
+  }
+
+  .active {
+    background-color: var(--primary-button);
+    .option,
+    .author,
+    .title {
+      color: var(--secondary);
+    }
   }
 }

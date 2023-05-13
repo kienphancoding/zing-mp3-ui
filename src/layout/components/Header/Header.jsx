@@ -129,7 +129,7 @@ const Header = ({ isScrolled }) => {
         </div>
         <div className={clsx(style.avatar)}>
           <img
-            src="https://i.pinimg.com/564x/f8/fa/d2/f8fad2b691d51fe8514f0bb5f4b2e53f.jpg"
+            src="https://i.pinimg.com/564x/a2/4f/80/a24f804378528b298443f15abd7c24ae.jpg"
             alt="Avatar"
           />
         </div>

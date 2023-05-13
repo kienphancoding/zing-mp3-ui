@@ -4,7 +4,7 @@
   z-index: 1000;
   width: 100%;
   height: var(--height-footer);
-  background-color: #130c1c;
+  background-color: var(--secondary-button);
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
@@ -59,12 +59,12 @@
     width: 100px;
     height: 5px;
     border-radius: 10px;
-    background-color: white;
+    background-color: var(--secondary);
     margin-left: 10px;
     cursor: pointer;
     .volumeNumber{
       height: 5px;
-      background-color: red;
+      background-color: var(--primary);
     }
   }
 }
@@ -93,13 +93,13 @@
     align-items: center;
     .progress {
       height: 3px;
-      background-color: red;
+      background-color: var(--primary);
       width: 100%;
       border-radius: 10px;
       margin: 0 10px;
       cursor: pointer;
       .duration {
-        background-color: white;
+        background-color: var(--secondary);
         height: 3px;
         border-radius: 10px;
         &:hover {

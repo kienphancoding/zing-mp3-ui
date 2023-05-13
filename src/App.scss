@@ -6,7 +6,7 @@
   box-sizing: border-box;
   user-select: none;
   -webkit-user-select: none;
-  color: #fafafa;
+  color: var(--primary);
 }
 
 :root {
@@ -15,14 +15,15 @@
   --height-header: 70px;
   --width-sidebar: 237px;
 
-  --blue-1: #2a213a;
-  --blue-2: #34224f;
-  --blue-3: #844d4d;
-  --blue-4: #644646;
+  --primary: #2e1115;
+  --secondary: #ffffff;
+  --primary-button: #4f1b1d;
+  --secondary-button: #eaeff2;
+  --accent: #83687b;
 }
 a {
   text-decoration: none;
-  color: var(--black);
+  color: var(--primary);
 }
 
 body {

@@ -132,13 +132,10 @@ const Footer = () => {
         })}
 
         <div className={clsx(style.left)}>
-          <img
-            src="https://i.pinimg.com/564x/a3/20/2b/a3202b100e1bedd77c2aa2e4ac538390.jpg"
-            alt=""
-          />
+          <img src={songs[indexSong].image} alt="" />
           <div className={clsx(style.info)}>
-            <h1 className={clsx(style.namesong)}>Dandelions</h1>
-            <p className={clsx(style.namesinger)}>Ruth B.</p>
+            <h1 className={clsx(style.namesong)}>{songs[indexSong].name}</h1>
+            <p className={clsx(style.namesinger)}>{songs[indexSong].singer}</p>
           </div>
           <FontAwesomeIcon icon={faHeart} className={clsx(style.icon)} />
           <FontAwesomeIcon icon={faEllipsis} className={clsx(style.icon)} />
@@ -227,7 +224,15 @@ const Footer = () => {
           </div>
           <FontAwesomeIcon
             icon={faListCheck}
-            style={showList ? { backgroundColor: "pink" } : {}}
+            style={
+              showList
+                ? {
+                    backgroundColor: "var(--secondary)",
+                    padding: "10px",
+                    borderRadius: "50%",
+                  }
+                : { padding: "10px", borderRadius: "50%" }
+            }
             className={clsx(style.icon)}
             onClick={() => setShowList(!showList)}
           />

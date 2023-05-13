@@ -2,11 +2,24 @@ import clsx from "clsx";
 import style from "./PageNotFound.module.scss";
 
 const PageNotFound = () => {
-    return ( 
-        <div className={clsx(style.wrapper)}>
-            <h1>Page Not Found</h1>
-        </div>
-     );
-}
- 
+  return (
+    <div className={clsx(style.wrapper)}>
+      <div className={clsx(style.loading)}>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  );
+};
+
 export default PageNotFound;
