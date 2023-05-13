@@ -10,14 +10,22 @@ const Layout = ({ children }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(document.getElementsByClassName(clsx(style.content))[0].scrollTop > 0);
+      setIsScrolled(
+        document.getElementsByClassName(clsx(style.content))[0].scrollTop > 0
+      );
     };
-    document.getElementsByClassName(clsx(style.content))[0].addEventListener("scroll", handleScroll);
+    document
+      .getElementsByClassName(clsx(style.content))[0]
+      .addEventListener("scroll", handleScroll);
 
     return () => {
-      document.getElementsByClassName(clsx(style.content))[0].removeEventListener("scroll", handleScroll);
+      document
+        .getElementsByClassName(clsx(style.content))[0]
+        .removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  console.clear();
 
   return (
     <div className={clsx(style.wrapper)}>

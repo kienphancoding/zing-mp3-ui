@@ -12,7 +12,7 @@ const Lyrics = ({
 }) => {
   //highlighted lyrics
   useEffect(() => {
-    document.getElementsByClassName(clsx(style.highlighted))[0].scrollIntoView({
+    document.getElementsByClassName(clsx(style.highlighted))[0]?.scrollIntoView({
       behavior: "smooth",
       block: "center",
       inline: "nearest",
@@ -36,7 +36,7 @@ const Lyrics = ({
     }, 1000);
 
     return () => clearInterval(timerId);
-  }, []);
+  }, [indexSong]);
 
   return (
     <div

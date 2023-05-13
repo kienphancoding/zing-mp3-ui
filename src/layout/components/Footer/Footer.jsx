@@ -204,7 +204,12 @@ const Footer = () => {
               <div className={clsx(style.duration)}></div>
             </div>
 
-            <p className={clsx(style.time)}>4:20</p>
+            <p className={clsx(style.time)}>
+              {Math.floor(audioRef?.current?.duration / 60)}:
+              {Math.floor(audioRef?.current?.duration % 60) < 10
+                ? "0" + Math.floor(audioRef?.current?.duration % 60)
+                : Math.floor(audioRef?.current?.duration % 60) ?? "0:00"}
+            </p>
           </div>
         </div>
 
